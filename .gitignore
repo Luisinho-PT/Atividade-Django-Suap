@@ -1,0 +1,110 @@
+# ============================
+# Django / Python .gitignore
+# ============================
+
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual (virtualenv, venv, poetry, etc.)
+venv/
+env/
+.venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Configurações de ambiente / segredos
+*.env
+*.env.*
+.envrc
+secrets.json
+
+# Arquivos de log
+*.log
+*.out
+*.err
+
+# Arquivos temporários / backups
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Compilação / distribuição
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Arquivos do instalador do PyInstaller
+# (podem incluir chaves e senhas)
+*.manifest
+*.spec
+
+# Banco de dados local (SQLite, etc.)
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de migração compilados
+*.pyc
+*/migrations/__pycache__/
+# (Opcional) se quiser ignorar todas as migrações, descomente a linha abaixo:
+# */migrations/
+
+# Arquivos de cache do Django
+*.pot
+*.py,cover
+local_settings.py
+
+# Arquivos estáticos gerados
+/static/
+staticfiles/
+static/
+media/
+
+# Testes / cobertura
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.hypothesis/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# IDEs / editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Docker / containers
+docker-compose.override.yml
+*.pid
+
+# Arquivos específicos de deploy
+*.pem
+*.key
+*.crt
+*.csr
